@@ -3,7 +3,7 @@
 module.exports = function(Employee) 
 {
 
-    Employee.getEmployeeByname = function(name,callback)
+    Employee.getEmployeeBynama = function(name,callback)
     {
         new Promise(function(resolve,reject)
         {
@@ -14,7 +14,7 @@ module.exports = function(Employee)
                 {
                     err = new Error ("Data no found");
                     err.statusCode = 404;
-                    reject (err)
+                    reject (err);
                 }
                 resolve(result);
             });
@@ -33,15 +33,15 @@ module.exports = function(Employee)
     };
 
     Employee.remoteMethod(
-        'getEmployeeByname',
+        'getEmployeeBynama',
         {
             description: 'get user by name',
             accepts:
             [
-                {arg: 'nama', type: 'string'},
+                {arg: 'name', type: 'string'},
             ],
             return: 
             {arg: 'res', type: 'object', root: true,},
-            http: { path: '/getEmployeeByname', verb: 'get'},
+            http: { path: '/getEmployeeBynama', verb: 'get'},
         });
 };

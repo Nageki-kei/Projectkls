@@ -9,13 +9,13 @@
 
   "properties": 
   {
-    "username":
+    "Username":
     {
       "type":"string",
       "require": true
     },
 
-    "password":
+    "Password":
     {
       "type":"string"
     },
