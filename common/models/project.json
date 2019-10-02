@@ -5,9 +5,46 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
-  "validations": [],
-  "relations": {},
-  "acls": [],
-  "methods": {}
-}
+      "properties": 
+      {
+        "name":
+        {
+          "type" : "string",
+          "required" : true
+      },
+
+
+      "factory":
+      {
+        "type" : "string",
+        "required" :true
+      },
+      
+
+      "deadline":
+      {
+        "type" : "string",
+        "required" :true
+      },
+
+      "email":
+      {
+        "type" : "string",
+        "required" :true
+      },
+
+
+      "addres":
+      {
+        "type":"string",
+        "required" :true
+      }
+    },
+
+      "validations": [],
+      "relations": {},
+      "acls": [],
+      "methods": {}
+    }
+    
+  
