@@ -2,10 +2,34 @@
   "name": "employee",
   "base": "PersistedModel",
   "idInjection": true,
-  "options": {
+  "options": 
+  {
     "validateUpsert": true
   },
-  "properties": {},
+
+  "properties": 
+  {
+    "nama":
+    {
+      "type":"string",
+      "require": true
+    },
+
+    "tmpl":
+    {
+      "type":"string"
+    },
+
+    "tgll":
+    {
+      "type":"string"
+    },
+
+    "noTelephon":
+    {
+      "type":"string"
+    }
+  },
   "validations": [],
   "relations": {},
   "acls": [],

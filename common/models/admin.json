@@ -2,10 +2,31 @@
   "name": "admin",
   "base": "PersistedModel",
   "idInjection": true,
-  "options": {
+  "options": 
+  {
     "validateUpsert": true
   },
-  "properties": {},
+
+  "properties": 
+  {
+    "username":
+    {
+      "type":"string",
+      "require": true
+    },
+
+    "password":
+    {
+      "type":"string"
+    },
+
+    "email":
+    {
+      "type":"string",
+      "require": true
+    }
+  },
+
   "validations": [],
   "relations": {},
   "acls": [],

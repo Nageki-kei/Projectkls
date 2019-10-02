@@ -36,19 +36,19 @@
     "public": false
   },
   "owner": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": true
   },
   "admin": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": true
   },
   "employee": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": true
   },
   "project": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": true
   }
 }
