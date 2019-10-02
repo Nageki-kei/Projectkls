@@ -16,6 +16,7 @@ module.exports = function(Employee)
                     err.statusCode = 404;
                     reject (err)
                 }
+                resolve(result);
             });
         })
         
@@ -37,14 +38,10 @@ module.exports = function(Employee)
             description: 'get user by name',
             accepts:
             [
-                {
-                    arg: 'nama', type: 'string'
-                }
+                {arg: 'nama', type: 'string'},
             ],
             return: 
-            {
-                arg: 'res', type: 'object', root: true
-            },
-            http: { path: '/getEmployeeByname', verb: 'get'}
+            {arg: 'res', type: 'object', root: true,},
+            http: { path: '/getEmployeeByname', verb: 'get'},
         });
 };

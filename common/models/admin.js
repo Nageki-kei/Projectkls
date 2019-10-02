@@ -12,9 +12,10 @@ module.exports = function(Admin)
                 if (result == null)
                 {
                     err = new Error ("Data no found");
-                    err = statutsCode = 404;
+                    err.statutsCode = 404;
                     reject (err)
                 }
+                resolve(result);
             });
         })
 
@@ -32,16 +33,12 @@ module.exports = function(Admin)
 
     Admin.remoteMethod('getAdminByuser',
     {
-        description: 'get user by tempat lahir', accepts:
+        description: 'get user by Username', accepts:
         [
-            {
-                arg: 'username', type: 'string'
-            }
+            {arg: 'username', type: 'string'},
         ],
         return:
-        {
-            arg: 'res', type: 'object',root: true
-        },
-        http: { path: '/getAdminByuser', verb: 'get'}
+        { arg: 'res', type: 'object',root: true,},
+        http: { path: '/getAdminByuser', verb: 'get'},
     });
 };
