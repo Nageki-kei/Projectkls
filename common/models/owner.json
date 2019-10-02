@@ -5,7 +5,31 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": 
+  {
+    "name":
+    {
+      "type" : "string",
+      "require" : true
+  },
+  
+  "gender":
+  {
+    "type" : "string",
+    "require" : true
+  },
+
+  "email":
+  {
+    "type" : "char"
+  },
+
+  "addres":
+  {
+    "type":"char"
+  }
+  },
+
   "validations": [],
   "relations": {},
   "acls": [],
