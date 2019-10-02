@@ -11,23 +11,25 @@
     {
       "type" : "string",
       "require" : true
-  },
+    },
   
-  "gender":
-  {
-    "type" : "string",
-    "require" : true
-  },
+    "gender":
+    {
+      "type" : "string",
+      "require" : true
+    },
 
-  "email":
-  {
-    "type" : "char"
-  },
+    "email":
+    {
+      "type" :"string",
+      "require" : true
+    },
 
-  "addres":
-  {
-    "type":"char"
-  }
+    "addres":
+    {
+      "type":"string",
+      "require" : true
+    }
   },
 
   "validations": [],

@@ -5,7 +5,6 @@ module.exports = function(Admin)
   {
     new Promise(function(resolve, reject) 
     {
-            // find name
       Admin.find({where: {Username: {like: name}}}, function(err, result) 
       {
         if (err) reject(err);
