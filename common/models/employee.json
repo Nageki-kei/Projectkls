@@ -22,7 +22,7 @@
 
     "tgll":
     {
-      "type":"string"
+      "type":"date"
     },
 
     "noTelephon":
