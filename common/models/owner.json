@@ -5,33 +5,24 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": 
-  {
-    "name":
-    {
-      "type" : "string",
-      "require" : true
+  "properties": {
+    "name": {
+      "type": "string",
+      "require": true
     },
-  
-    "gender":
-    {
-      "type" : "string",
-      "require" : true
+    "gender": {
+      "type": "string",
+      "require": true
     },
-
-    "email":
-    {
-      "type" :"string",
-      "require" : true
+    "email": {
+      "type": "string",
+      "require": true
     },
-
-    "addres":
-    {
-      "type":"string",
-      "require" : true
+    "addres": {
+      "type": "string",
+      "require": true
     }
   },
-
   "validations": [],
   "relations": {},
   "acls": [],

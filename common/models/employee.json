@@ -2,36 +2,42 @@
   "name": "employee",
   "base": "PersistedModel",
   "idInjection": true,
-  "options": 
-  {
+  "options": {
     "validateUpsert": true
   },
-
-  "properties": 
-  {
-    "nama":
-    {
-      "type":"string",
+  "properties": {
+    "nama": {
+      "type": "string",
       "require": true
     },
-
-    "tmpl":
-    {
-      "type":"string"
+    "email": {
+      "type": "string"
     },
-
-    "tgll":
-    {
-      "type":"date"
+    "phone": {
+      "type": "string"
     },
-
-    "noTelephon":
-    {
-      "type":"string"
+    "createAt": {
+      "type": "date",
+      "defaultFn": "now"
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": 
+  {
+    "project":
+    {
+      "type" :"belongsTo",
+      "model" :"project",
+      "foreignkey" :"projectId"
+    },
+    
+    "roles":
+    {
+      "type" :"hasMany",
+      "model" :"roles",
+      "foreignkey" :"employeeId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

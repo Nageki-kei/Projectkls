@@ -1,12 +1,9 @@
 {
-  "db": 
-  {
+  "db": {
     "name": "db",
     "connector": "memory"
   },
-
-  "mongodb":
-  {
+  "mongodb": {
     "database": "project",
     "name": "mongodb",
     "connector": "mongodb",

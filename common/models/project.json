@@ -5,46 +5,33 @@
   "options": {
     "validateUpsert": true
   },
-      "properties": 
-      {
-        "name":
-        {
-          "type" : "string",
-          "required" : true
-      },
-
-
-      "factory":
-      {
-        "type" : "string",
-        "required" :true
-      },
-      
-
-      "deadline":
-      {
-        "type" : "string",
-        "required" :true
-      },
-
-      "email":
-      {
-        "type" : "string",
-        "required" :true
-      },
-
-
-      "addres":
-      {
-        "type":"string",
-        "required" :true
-      }
+  "properties": {
+    "nameProject": {
+      "type": "string"
     },
-
-      "validations": [],
-      "relations": {},
-      "acls": [],
-      "methods": {}
+    "capacity": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "paymentStatus": {
+      "type": "string"
     }
-    
-  
+  },
+  "validations": [],
+  "relations": 
+  {
+    "employee":
+    {
+      "type" :"hasMany",
+      "model" :"employee",
+      "foreignKey" :"projectId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

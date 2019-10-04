@@ -50,5 +50,9 @@
   "project": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "roles": {
+    "dataSource": "db",
+    "public": true
   }
 }
